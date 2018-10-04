@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobiler"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTiyatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiyatro" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinema" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFutbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Futbol" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYuzme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yüzme" />
+
+        <RadioGroup
+            android:id="@+id/cinsiyet"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bay" />
+
+            <RadioButton
+                android:id="@+id/radioBayan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bayan" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonGonder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gönder" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
